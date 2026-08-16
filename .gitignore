@@ -1,3 +1,7 @@
+# ====================
+# 原有的 C/C++ 构建规则（已保留）
+# ====================
+
 # Prerequisites
 *.d
 
@@ -22,7 +26,6 @@
 *.dylib
 *.dll
 *.so.*
-
 
 # Fortran module files
 *.mod
@@ -67,3 +70,30 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# ====================
+# 新增：Obsidian 笔记库专用规则
+# ====================
+
+# 1. 忽略 Obsidian 工作区布局文件（避免冲突的关键）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/obsidian.json   # 有时会记录最近打开的笔记
+
+# 2. 忽略 Excalidraw 自动导出的图片（避免冗余，可保留源码）
+# 如果你用插件自动导出了 PNG/SVG，想保留就删掉下面两行
+# *.excalidraw.png
+# *.excalidraw.svg
+
+# 3. 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# 4. 忽略临时笔记（如果你有的话）
+*未命名.md
+*temp.md
+*草稿.md
+
+# 5. 如果用了第三方同步工具
+.sync/
