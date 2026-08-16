@@ -103,7 +103,7 @@
   "autoexportPNG": true,
   "autoExportLightAndDark": false,
   "autoexportExcalidraw": false,
-  "embedType": "excalidraw",
+  "embedType": "PNG",
   "embedMarkdownCommentLinks": true,
   "embedWikiLink": true,
   "embedPlaceholderImage": true,
@@ -521,7 +521,7 @@
     "lockedReadingMode": false
   },
   "markdownNodeOneClickEditing": false,
-  "canvasImmersiveEmbed": true,
+  "canvasImmersiveEmbed": false,
   "startupScriptPath": "",
   "aiEnabled": true,
   "aiVerboseLogging": false,
